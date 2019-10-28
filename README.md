@@ -48,12 +48,16 @@ passwd = password
 domain = oclip.hanxi.info
 ```
 
-## TODO
+## Feature
 
+- [x] Windows platform
 - [x] Linux platform
-- [x] Windows platorm: Set auto start
-- [x] Windows platorm: Open config file
-- [x] Windows platorm: Change Logo
+
+## Install in Linux
+
+```bash
+curl -s https://raw.githubusercontent.com/oclip/oclip-client/master/install.sh | bash -- /dev/stdin token passwd
+```
 
 ## Others
 
