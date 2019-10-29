@@ -65,7 +65,12 @@ local function connect()
         options = 'all'
       }
       local domain = cfg.get('domain')
-      local url = string.format('wss://%s/server', domain)
+      local url
+      if domain:sub(1,2) == "ws" then
+        url = domain
+      else
+        url = string.format('wss://%s/server', domain)
+      end
       print('try connect: ', url)
       local ok, err = ws_client:connect(url, '', params)
       if not ok then
