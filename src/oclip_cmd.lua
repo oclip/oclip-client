@@ -94,7 +94,7 @@ else
 Usage: oclip [OPTION] [FILE]...
 Open clipboard in cloud.
 
-  -i      read text into oclip server from standard input or files (default)
+  -i      read text into oclip server from standard input or files
   -o      prints the oclip server to standard out (generally for piping
           to a file or program)
   -h      usage information
